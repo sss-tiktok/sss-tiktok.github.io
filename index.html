@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>𝐓𝐢𝐤𝐓𝐨𝐤 𝐕𝐢𝐝𝐞𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 - Pro Ultimate</title>
+  <title>𝐓𝐢𝐤𝐓𝐨𝐤 𝐕𝐢𝐝𝐞𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 -</title>
   
+  <!-- Web App Manifest & Favicon -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" sizes="32x32" href="logo-192.png">
+  <link rel="apple-touch-icon" href="logo-512.png">
+
   <!-- Google Fonts (Poppins) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -120,18 +125,27 @@
     }
 
     .dev-badge {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
       background: rgba(255, 255, 255, 0.08);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       border: 1px solid rgba(255, 255, 255, 0.18);
-      padding: 6px 16px;
+      padding: 6px 14px;
       border-radius: 30px;
       font-size: 12px;
       font-weight: 600;
       color: #00f2fe;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
       letter-spacing: 0.5px;
+    }
+
+    .dev-badge img {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      object-fit: cover;
     }
 
     .theme-btn {
@@ -567,9 +581,12 @@
   <!-- Main Container -->
   <div class="container">
     
-    <!-- Header with Dev Badge & Theme Toggle -->
+    <!-- Header with Dev Badge, Logo & Theme Toggle -->
     <div class="header-top">
-      <div class="dev-badge">𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 𝐊𝐚𝐰𝐬𝐚𝐫</div>
+      <div class="dev-badge">
+        <img src="logo-192.png" alt="Logo">
+        <span>𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 𝐊𝐚𝐰𝐬𝐚𝐫</span>
+      </div>
       <button onclick="toggleTheme()" id="themeBtn" class="theme-btn">☀️ Light</button>
     </div>
 
