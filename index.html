@@ -304,6 +304,17 @@
       box-shadow: 0 5px 15px rgba(255, 0, 80, 0.4);
     }
 
+    /* Ad-Free Notice Badge Style */
+    .adfree-notice {
+      margin-top: 16px;
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.5);
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 12px;
+      letter-spacing: 0.3px;
+    }
+
     #result { margin-top: 25px; }
 
     /* Shimmer Skeleton Loader */
@@ -568,6 +579,10 @@
     body.light-mode .skeleton-line::after {
       background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
     }
+    body.light-mode .adfree-notice {
+      color: rgba(0, 0, 0, 0.5);
+      border-top-color: rgba(0, 0, 0, 0.1);
+    }
   </style>
 </head>
 <body>
@@ -602,6 +617,11 @@
     </div>
 
     <button onclick="downloadVideo()" class="main-btn">𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝</button>
+
+    <!-- Ad-Free Notice Badge -->
+    <div class="adfree-notice">
+      🛡️ 100% Ad-Free & Clean Experience – Created for Users' Convenience.
+    </div>
 
     <div id="result"></div>
   </div>
